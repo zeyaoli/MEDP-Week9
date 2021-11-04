@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Animation Slider</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            #box {
+                width: 100px;
+                height: 100px;
+                background: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="box"></div>
+            <label for="rotate">Rotate</label>
+            <input type="range" min="0" max="360" id="slider" name="rotate" />
+            <label for="position">Position</label>
+            <input
+                type="range"
+                min="0"
+                max="100"
+                id="position_slider"
+                name="position"
+            />
+            <input type="range" min="0" max="100" id="opacity-slider" />
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
